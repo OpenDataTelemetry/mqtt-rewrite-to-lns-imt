@@ -86,7 +86,7 @@ func main() {
 	mqttSubOpts.SetConnectionLostHandler(connLostHandler)
 
 	mqttSubTopics := map[string]byte{
-		"IMT/LNS/LnsDownlink/+/down/imt": byte(mqttSubQos),
+		"IMT/LNS/Command/+/down/imt": byte(mqttSubQos),
 	}
 
 	mqttPubBroker := "mqtt://networkserver.maua.br:1883"
